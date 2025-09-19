@@ -1,0 +1,14 @@
+bp_readings = [120, 137, 151, 123, 162, 173, 127, 154]
+def normalize_readings(readings):
+  min_value = min(readings)
+  max_value = max(readings)
+
+  normalized_list = []
+  for x in readings
+    normalized_value = (x-min_value)/(max_value-min_value)
+    normalized_list.append(normalized_value)
+  return normalized_list
+
+normalized_bp = normalize_readings(bp_readings)
+print("Original blood pressure readings:", bp_readings)
+print("Normalized blood pressure readings:", normalized_bp)
